@@ -33,6 +33,18 @@ The **Gemini Chat App** is a simple chatbot application built using **Spring Boo
    mvn spring-boot:run
    ```
 
+### Postman Testing
+1. Open **Postman**.
+2. Create a **POST** request to `http://localhost:8080/api/qna/ask`.
+3. Set **Content-Type** to `application/json`.
+4. Add the following JSON in the request body:
+   ```json
+   {
+     "question": "What is AI?"
+   }
+   ```
+5. Click **Send** and check the response.
+
 ## Frontend (React)
 ### How It Works
 - **API.js:** Handles API requests to the backend.
@@ -52,8 +64,8 @@ The **Gemini Chat App** is a simple chatbot application built using **Spring Boo
    ```
 
 ## Running the Application
-1. Start the backend(geminichat) (`Spring Boot`).
-2. Start the frontend(gemini-chat-frontend) (`React`).
+1. Start the backend (`Spring Boot`).
+2. Start the frontend (`React`).
 3. Open `http://localhost:5173` in your browser.
 4. Ask a question and get AI-powered responses!
 
